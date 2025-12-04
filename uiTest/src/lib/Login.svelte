@@ -1,18 +1,19 @@
 <script lang="ts">
   import { FloatingLabelInput, Button } from "flowbite-svelte";
-  let size = $state('1.25rem');
+  let size = $state("1.25rem");
 </script>
 
-<div class="flex flex-col justify-center items-center w-full h-screen">
+<div
+  class="flex flex-col justify-center items-center w-full h-screen dark:bg-gray-900"
+>
   <div class="w-75 p-3">
-    <p class="text-3xl font-bold text-center mb-5">Log in</p>
+    <p class="text-3xl font-bold text-center mb-5 dark:text-white">Log in</p>
     <form class="flex flex-col gap-4" action="/">
       <FloatingLabelInput
         variant="outlined"
         name="username"
         id="username"
-        type="text"
-        >Username</FloatingLabelInput
+        type="text">Username</FloatingLabelInput
       >
       <FloatingLabelInput
         variant="outlined"
@@ -21,7 +22,7 @@
         type="passsword">Password</FloatingLabelInput
       >
       <a href="#" class="base text-primary-500">Froget Password ?</a>
-      <Button>Continue</Button>
+      <Button type="submit">Continue</Button>
     </form>
     <div class="flex flex-row gap-3 justify-center items-center my-4">
       <hr class="w-25 text-gray-400" />
@@ -44,6 +45,8 @@
         class="me-3"
       ></iconify-icon>Login with Credentials</Button
     >
-  </div> 
-  <p class="base text-gray-400">Don't Have An Account? <a href="#" class="text-primary-500">Create One</a></p>
+  </div>
+  <p class="base text-gray-400">
+    Don't Have An Account? <a href="#" class="text-primary-500">Create One</a>
+  </p>
 </div>
