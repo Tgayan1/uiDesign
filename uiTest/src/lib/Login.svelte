@@ -19,7 +19,7 @@
         variant="outlined"
         name="password"
         id="password"
-        type="passsword">Password</FloatingLabelInput
+        type="password">Password</FloatingLabelInput
       >
       <a href="#" class="base text-primary-500">Froget Password ?</a>
       <Button type="submit">Continue</Button>
